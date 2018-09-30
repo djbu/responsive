@@ -1,0 +1,139 @@
+<!doctype html>
+<html class="no-js">
+<head>
+	<title>Mobile-First Responsive Web Design</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="HandheldFriendly" content="true">
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen, handheld" />
+	<link rel="stylesheet" type="text/css" href="enhanced.css" media="screen  and (min-width: 40.5em)" />
+	<!--[if (lt IE 9)&(!IEMobile)]>
+	<link rel="stylesheet" type="text/css" href="enhanced.css" />
+	<![endif]-->
+	<script type="text/javascript" src="js/modernizr.js"></script>
+</head>
+<body id="page">
+	<header role="banner">
+    	<div>
+            <h1 class="logo"> Mi Tienda </h1>
+            <ul  id="nav-anchors" class="nav-anchors">
+            	<li><a href="#nav" id="menu-anchor">Menu</a></li>
+            	<li><a href="#search" id="search-anchor">buscar</a></li>
+            </ul>
+            <form id="search" action="#" method="post" class="search reveal">
+                <fieldset>
+                    <legend>Buscar en el sitio</legend>
+                    <label for="search-site">Buscar en el sitio</label>
+                    <input type="search" id="search-site" placeholder="Search Store" />
+                    <input type="submit" value="Search" />
+                </fieldset>
+            </form>
+            <nav id="nav" class="nav reveal">
+                <ul role="navigation">
+                    <li><a href="#">Camisas</a></li>
+                    <li><a href="#">Faldas</a></li>
+                    <li><a href="#">Vestidos</a></li>
+                </ul>
+            </nav>
+        </div>
+	</header><!--end .header-->
+	<div class="content product-info" role="main">
+		<section class="product-main">
+        	<header>
+				<h1 class="product-name">Camisa blanca</h1>
+                <div class="product-overview">
+                	<strong class="price">23bsS</strong>
+                	<ol class="star">
+                    	<li class="on">&#9733;</li>
+                        <li class="on">&#9733;</li>
+                        <li class="on">&#9733;</li>
+                        <li class="on">&#9733;</li>
+                        <li>&#9734;</li>
+                    </ol>
+                    <a href="#reviews" class="review-count">8 Calificaciones</a>
+                </div>
+                
+			</header>
+			<div id="product-img" class="product-img">
+                <figure class="img-container" id="img-container">
+					<img src="images/product_img_1.jpg" alt="camisa blanca" />
+				</figure>
+				<nav>
+					<ul>
+						<li><a href="images/product_img_1.jpg"><img src="images/product_img_1_thumb.png"/></a></li>
+						<li><a href="images/product_img_2.jpg"><img src="images/product_img_2_thumb.png"/></a></li>
+						<li><a href="images/product_img_3.jpg"><img src="images/product_img_3_thumb.png"/></a></li>
+					</ul>
+				</nav>
+			</div><!--end .product-img-->
+            <form method="post" action="#" id="product-form" class="product-form">
+                <fieldset>
+                    <legend>Agregar al carro</legend>
+                    <div class="field qty-field">
+                        <label for="qty">Cant</label>
+                        <input name="qty" id="qty" class="qty" type="number" pattern="[0-9]*" value="1" min="1" max="999" />
+                    </div>
+                    <div class="field size-field">
+                        <label for="size">Talla</label>
+                        <select id="size" name="size">
+                            <option value="S">S</option>
+                            <option value="S">M</option>
+                            <option value="S">L</option>
+                            <option value="S">XL</option>
+                        </select>
+                    </div>
+                    <div class="submit-form">
+                        <input type="submit" class="btn" value="Agregar al carro" />
+                    </div>
+                </fieldset>
+            </form><!--end #product-form-->
+            <div class="product-utils">
+            	<a href="#" class="share-btn">Compartir</a>
+            </div>
+            <div class="product-description"> 
+                <div id="p-desc">
+                	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sapiente blanditiis quisquam maiores, molestiae, dolorem harum quo unde ipsa qui consectetur asperiores ad. Atque accusamus architecto praesentium temporibus ipsum.</p>
+                </div>
+            </div><!--end .product-description-->
+		</section><!--end .product-main-->
+        <section class="aux related-products" id="related-products">
+			<header id="tab-related">
+            	<a href="related.html">
+                	<h2>Otros diseños</h2>
+                </a>
+            </header>
+		</section><!--end .related-products-->
+        <section class="aux reviews" id="reviews">
+        	<header id="tab-reviews">
+            	<a href="reviews.html">
+                    <h2>8 Calificaciones</h2>
+                    <ol class="star">
+                        <li class="on">&#9733;</li>
+                        <li class="on">&#9733;</li>
+                        <li class="on">&#9733;</li>
+                        <li class="on">&#9733;</li>
+                        <li>&#9734;</li>
+                    </ol>
+                </a>
+            </header>
+        </section><!--end .reviews-->
+	</div><!--end .content-->
+	<footer class="footer">
+		<div>
+            <nav class="nav" role="navigation">
+                <ul class="footer-nav">
+                    <li><a href="#">Camisas</a></li>
+                    <li><a href="#">Faldas</a></li>
+                    <li><a href="#">Vestidos</a></li>
+                </ul>
+            </nav>
+            <ul class="service-links">
+                <li class="tel" ><a href="#" title="Call our customer Service">Llamanos 424-111-2233</a></li>
+            </ul>
+        </div>
+	</footer><!--end .footer-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+	<script type="text/javascript" src="js/init.js "></script>
+	<script type="text/javascript" src="js/comments.js "></script>
+</body>
+</html>	
